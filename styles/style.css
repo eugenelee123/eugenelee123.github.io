@@ -59,8 +59,8 @@ main{
 img{
   width: 500px;
   height: 500px;
+  overflow: hidden;
 }
-
 
 ul{
   list-style-type: square;
