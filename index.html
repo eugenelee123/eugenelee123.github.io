@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html>
 
 <head>
   <meta charset="utf-8">
@@ -17,12 +17,9 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-  <title>Eugene Lee's Portfolio</title>
-
-  <!-- Fonts -->
+  <!-- <title>Eugene Lee's Portfolio</title> -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-  <!-- Styles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     html,
     body {
@@ -68,13 +65,17 @@
       grid-column-end: 5;
     }
 
-    .container {
+    * {
+      box-sizing: border-box
+    }
+
+    .bars_container {
       width: 100%;
       background-color: gray;
     }
 
     .skills {
-      text-align: right;
+      text-align: center;
       padding-top: 10px;
       padding-bottom: 10px;
       color: white;
@@ -105,9 +106,44 @@
       background: green;
     }
 
-    .card-container {
-      padding: 5px 20px;
+    .SQL {
+      width: 90%;
+      background: green;
     }
+
+    .css {
+      width: 80%;
+      background: green;
+    }
+
+    .swift {
+      width: 70%;
+      background: green;
+    }
+
+    .angular {
+      width: 85%;
+      background: green;
+    }
+
+    .xcode {
+      width: 80%;
+      background: green;
+    }
+
+    .R {
+      width: 75%;
+      background: green;
+    }
+
+    .tensorflow {
+      width: 70%;
+      background: green;
+    }
+
+    /* .card-bars_container {
+      padding: 5px 20px;
+    } */
 
     .projects {
       display: grid;
@@ -155,145 +191,171 @@
   </div>
   <div class="socials">
     <a href="https://www.linkedin.com/in/eugeneghunlee/" target="_blank" class="fa fa-linkedin fa-3x"></a>
-    &nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href="https://github.com/eugenelee123" target="_blank"> <i class="fa fa-github-square fa-3x"></i></a>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="" target="_blank"><i class="fa fa-paper-plane fa-3x"></i></a>
+    <!-- <i href="" target="_blank"><i class="fa fa-paper-plane fa-3x"></i></a> -->
   </div>
 
   <div class="about">
     <div class="about-middle">
-      <h2>Hey I'm Eugene</h2>
-      <p>I am currently working as a Fullstack Developer for Optimus Educational Services and I'm a full-time student at
+      <!-- <h2>Hey I'm Eugene</h2> -->
+      <!-- <img src = "img/IMG_1661.png" class="rounded-circle" style = "width: 250px"> -->
+      <p>I am currently working as a Fullstack Developer for Optimus Educational Services and I'm a full-time
+        student at
         CSUF where I am pursuing my B.S. in Computer Science. I'm passionate about software development, iOS
         development, machine learning, AI, and data science.</p>
     </div>
   </div>
 
-  <h2>Skills</h2>
-  <div class="bars">
-    <div class="web_dev">
-      <h3>Web Development</h3>
-      <p>Javascript/Typescript</p>
-      <div class="container">
-        <div class="skills Javascript">90%</div>
-      </div>
-      <p>PHP</p>
-      <div class="container">
-        <div class="skills PHP">85%</div>
-      </div>
-      <p>SQL</p>
-      <div class="container">
-        <div class="skills SQL">85%</div>
-      </div>
-      <p>CSS</p>
-      <div class="container">
-        <div class="skills css">85%</div>
-      </div>
-    </div>
-    <div class="iOS">
-      <h3>iOS Development</h3>
-      <p>Ionic</p>
-      <div class="container">
-        <div class="skills ionic">90%</div>
-      </div>
-      <p>Angular</p>
-      <div class="container">
-        <div class="skills angular">90%</div>
-      </div>
-      <p>XCode</p>
-      <div class="container">
-        <div class="skills xcode">80%</div>
-      </div>
-
-    </div>
-    <div class="data">
-      <h3>Data Science</h3>
-      <p>Python</p>
-      <div class="container">
-        <div class="skills python">80%</div>
-      </div>
-      <p>R</p>
-      <div class="container">
-        <div class="skills R">70%</div>
-      </div>
-      <p>Machine Learning/TensorFlow</p>
-      <div class="container">
-        <div class="skills tensorflow">65%</div>
-      </div>
-    </div>
-  </div>
-
   <br>
-  <h2>Here are a couple of projects that I'm really proud of.</h2>
+  <h2>Here are a couple of projects that I've worked on.</h2>
   <div class="projects">
     <div class="projects-middle">
     </div>
     <div class="left">
       <div class="card">
-        <div class="card-container">
+        <img src="">
+        <div class="card-bars_container">
+          <div class="card-body">
+            <h4><b>MyOLS/MyAELS</b></h4>
+            <p class="card-text">These are 2 iOS applications made using ionic that are currently on the app
+              store. Both
+              provide various functionality including a student progress tracker, pickup and drop-off
+              notifications, and
+              student/teacher schedules. Click <a href="https://apps.apple.com/us/app/myols/id1278818871"
+                target="_blank">here</a> to learn more.</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-bars_container">
           <div class="card-body">
             <h4><b>Ming's Upholstery Invoice Manager</b></h4>
-            <p class="card-text">I'm constructing a progressive web app using PHP, jQuery, and HTML/CSS that is helping
+            <p class="card-text">I'm constructing a progressive web app using PHP, jQuery, and HTML/CSS that
+              is helping
               this business transition from paper to paperless transactions.</p>
           </div>
         </div>
       </div>
+      <br>
       <div class="card">
-        <img src="" style="width=100%" ;>
-        <div class="card-container">
+        <img src="">
+        <div class="card-bars_container">
           <div class="card-body">
             <h4><b>CloutFinder</b></h4>
-            <p class="card-text">CloutFinder is a web application made using Javascript and HTML/CSS that connects
+            <p class="card-text">CloutFinder is a web application made using Javascript and HTML/CSS that
+              connects
               photographers and models.</p>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="right">
       <div class="card">
-        <img src="" style="width=100%" ;>
-        <div class="card-container">
+        <div class-"card-bars_container">
           <div class="card-body">
-            <h4><b>Titanium Sign in Automation</b></h4>
-            <p class="card-text">This project was made using python and selenium to automate the sign in process for
-              CSUF engineering students to quickly navigate to the career center.</p>
+            <h4><b>Optimus Learning School Website</b></h4>
+            <p class="card-text">Click the <a href="https://www.optimuslearningschool.com" target="_blank">click</a> to
+              check
+              out optimuslearningschool.com! This is an ongoing project that I contributed and added lots
+              of functionality to.
+            </p>
           </div>
         </div>
       </div>
-
-    </div>
-    <div class="right">
+      <br>
       <div class="card">
-        <img src="" style="width=100%" ;>
-        <div class="card-container">
+        <img src="" style="width=100%">
+        <div class="card-bars_container">
           <div class="card-body">
             <h4><b>DNA Sequence Alignment</b></h4>
-            <p class="card-text">This is a python script inspired by the Needleman-Wunsch dynamic programming algorithm
+            <p class="card-text">This is a python script inspired by the Needleman-Wunsch dynamic
+              programming algorithm
               which calculates the alignment and edit distance of 2 DNA strings using numpy.</p>
           </div>
         </div>
       </div>
+      <br>
       <div class="card">
-        <img src="" style="width=100%" ;>
-        <div class="card-container">
+        <img src="" style="width=100%">
+        <div class="card-bars_container">
           <div class="card-body">
-            <h4><b>Syntax Analyzer</b></h4>
-            <p class="card-text">This is a C++ syntax analyzer made using a parsing table for the CSUF CPSC 323
-              compilers course.</p>
+            <h4><b>Titanium Sign in Automation</b></h4>
+            <p class="card-text">This is a python script to automate the sign in process for
+              CSUF engineering students to quickly navigate to the career center.</p>
           </div>
         </div>
       </div>
-      <div class="card">
-        <img src="" style="width=100%" ;>
-        <div class="card-container">
-          <div class="card-body">
-            <h4><b>Portable WordPress Server</b></h4>
-            <p class="card-text">This is a Vagrant project that defines a virtual machine and runs necessary scripts to
-              host a WordPress site.</p>
-          </div>
-        </div>
+      <br>
+    </div>
+  </div>
+  <br><br><br>
+  <h2>Skills</h2>
+  <div class="bars">
+    <div class="web_dev">
+      <h3>Web Development</h3>
+      <!-- <p>Javascript/Typescript</p> -->
+      <div class="bars_container">
+        <div class="skills Javascript">Javascript/Typescript</div>
+      </div>
+      <br>
+      <!-- <p>PHP</p> -->
+      <div class="bars_container">
+        <div class="skills PHP">PHP</div>
+      </div>
+      <br>
+      <!-- <p>SQL</p> -->
+      <div class="bars_container">
+        <div class="skills SQL">SQL</div>
+      </div>
+      <br>
+      <!-- <p>CSS</p> -->
+      <div class="bars_container">
+        <div class="skills css">CSS/Bootstrap</div>
+      </div>
+    </div>
+    <div class="iOS">
+      <h3>iOS Development</h3>
+      <div class="bars_container">
+        <div class="skills swift">Swift</div>
+      </div>
+      <br>
+      <!-- <p>Ionic</p> -->
+      <div class="bars_container">
+        <div class="skills ionic">Ionic</div>
+      </div>
+      <br>
+      <!-- <p>Angular</p> -->
+      <div class="bars_container">
+        <div class="skills angular">Angular</div>
+      </div>
+      <br>
+      <!-- <p>XCode</p> -->
+      <div class="bars_container">
+        <div class="skills xcode">XCode</div>
+      </div>
+    </div>
+    <div class="data">
+      <h3>Data Science</h3>
+      <!-- <p>Python</p> -->
+      <div class="bars_container">
+        <div class="skills python">Python</div>
+      </div>
+      <br>
+      <!-- <p>R</p> -->
+      <div class="bars_container">
+        <div class="skills R">R</div>
+      </div>
+      <!-- <p>Machine Learning/TensorFlow</!-->
+      <br>
+      <div class="bars_container">
+        <div class="skills tensorflow">Machine Learning/TensorFlow</div>
       </div>
     </div>
   </div>
+
 </body>
 
 </html>
